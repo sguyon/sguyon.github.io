@@ -93,9 +93,4 @@ group :jekyll_plugins do
 end
 
 
-gem 'capistrano'
-gem 'capistrano-jekyll' # https://github.com/ne1ro/capistrano-jekyll
-gem 'rvm-capistrano' # TODO check config @ https://github.com/capistrano/rvm
-
-
 #TODO add bootstrap and co
