@@ -1,18 +1,25 @@
----
-layout: default
----
-
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+<html>
+  <head>
+    <title>Sacha Guyon - digital marketing manager, paris + shanghai </title>
+  <style>body{font-family: helvetica, arial, verdana;font-size:80%}</style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+        $.getJSON("sa__cha.json",
+        //$.getJSON("https://nomadtrips.co/sa__cha.json",
+            function(data){
+              console.log(data.location.now);
+              $("#location").text(data.location.now);
+            });
+      });
+  </script>
+  </head>
+  <p>
+  Hello! I am Sacha, French product &amp; marketing manager.
+    <br><br>
+    Current location: <span id="location"><a href="http://nomadtrips.co/sa__cha">(loading...)</a></span>.
+    <br><br>
+  You can check out my <a href="http://www.twitter.com/sa__cha">twitter</a>, <a href="http://www.linkedin.com/in/sacha">linkedin</a> or <a href="http://www.instagram.com/sa___cha">instagram</a> while I am working on making this website less empty.
+  </p>
+</body>
+</html>
