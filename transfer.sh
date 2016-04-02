@@ -1,1 +1,1 @@
-rsync -crz --delete /Users/sacha/sources/sguyon.com/_site/ shanghaitech@shanghaitech.com:sguyon.com/current/
+rsync -v -crz --delete /Users/sacha/sources/sguyon.com/_site/ shanghaitech@shanghai-tech.com:sguyon.com/current/
